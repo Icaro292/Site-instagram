@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="perfil" src="img/icaro.jpg" alt="">
+        <h1>Ícaro Almeida T.I</h1>
+    </header>
+
+    <hr>
+    <div class="container">
+        
+        <section id="section1">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Ícaro Almeida da Silva e sou técnico em informática, residente em Paragominas, Pará. Trabalho com informática desde 2023 e estou sempre em busca de expandir meus conhecimentos e habilidades. Acredito que o aprendizado contínuo é essencial para acompanhar as constantes evoluções tecnológicas. Estou sempre pronto para enfrentar novos desafios e contribuir com soluções inovadoras no mundo da tecnologia.</p>
+        </section>
+        
+        <section class="section2">
+            <h2>Habilidades</h2>
+            <p>Aqui estão algumas das minhas principais habilidades:</p>
+            <ul>
+                <li>Instalação e configuração de sistemas operacionais</li>
+                <li>Manutenção de computadores e notebooks</li>
+                <li>Cabeamento estruturado de redes</li>
+                <li>Configuração lógica de redes de computadores</li>
+                <li>Suporte técnico especializado ao cliente</li>
+            </ul>  
+        </section>
+
+        <section class="section3">
+            <hr>
+            <h2>Contato</h2>
+            <p>Você pode me encontrar nas seguintes redes sociais:</p>
+             
+        <div class="redes">
+            <a href="https://wa.me/5591998303157?text=Ol%C3%A1%20"><img src="img/whatsapp.png" alt=""></a>
+            <a href="https://www.instagram.com/icaro_091_?igsh=Y3Q0cGRqbnh1bjZo"><img src="img/instagram.png" alt=""></a>
+            <a href="http://www.linkedin.com/in/%C3%ADcaro-almeida-da-silva"><img src="img/linkedin.png" alt=""></a>  
+        </div>
+        </section>
+
+    </div>
+    
+    <footer>
+        <div class="textoo">
+        &copy; 2024 Ícaro Almeida T.I
+    </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+
+            const options = {
+                root: null, // viewport
+                threshold: 0.1, // 10% visível
+                rootMargin: "0px" // sem margem
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+
+</body>
+</html>

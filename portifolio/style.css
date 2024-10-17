@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #656363;
+    background-image: url(img/imgfundo.jpg);
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background: #38668547;
+    margin: 20px 0;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+
+}
+
+.perfil{
+    max-width: 300px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1, h2 {
+    color: #e1e1e1;
+    text-align: center;
+}
+section {
+    margin-bottom: 20px;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+    margin-bottom: 40px;
+}
+
+.redes img{
+    width: 45px; /* Define uma largura fixa para as imagens */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+section{
+    transition: all 0.5s ease-in-out;
+}
+
+section.visible{
+    opacity: 1;
+    transform: translateY(0);
+}

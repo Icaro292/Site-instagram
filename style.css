@@ -1,0 +1,92 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            background-color: #282c34;
+            color: #ffffff;
+            transition: background-color 0.5s ease;
+        }
+        body:hover {
+            background-color: #1e2130;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        header:hover {
+            transform: scale(1.05);
+        }
+        .perfil {
+            max-width: 300px;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #61dafb;
+            transition: border-color 0.5s ease;
+        }
+        .perfil:hover {
+            border-color: #21a1f1;
+        }
+        header h4 {
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #61dafb;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 15px;
+            font-size: 18px;
+            background-color: #ffffff;
+            color: #282c34;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.4s ease, transform 0.3s ease, color 0.4s ease;
+        }
+        .buttons button:hover {
+            background-color: #61dafb;
+            color: #ffffff;
+            transform: translateY(-5px);
+        }
+        .buttons a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #61dafb;
+            transition: color 0.3s ease;
+        }
+        footer:hover {
+            color: #21a1f1;
+        }
